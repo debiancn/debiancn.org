@@ -1,0 +1,116 @@
+/* tab */
+h3 {
+  padding-left: 30px;
+  line-height: 1.875em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
+}
+
+section {
+  display: none;
+}
+
+/* split the width of 100% to 12 cols  */
+.col-1, .col-2, .col-3 {
+  margin: .5em 1em;
+  flex: 1;
+}
+
+/* media query for all screens to select the right width */
+@media only screen and ( max-width: 768px ) {
+  .col-2, .col-3 {
+    flex: 2;
+  }
+}
+
+.gray-background {
+  background-color: rgba(238, 238, 238, 0.7);
+}
+
+.newsContainer li, .updateContainer li {
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+@media ( max-width: 450px ) {
+  .updateContainer li {
+    display: block;
+  }
+}
+
+.newsContainer li:nth-child(2n+1), .updateContainer li:nth-child(2n+1) {
+  background: #E4E4E4;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.newsDate {
+  flex: 2;
+}
+
+.newsTitle {
+  flex: 6;
+}
+
+.newsLink {
+  flex: 1;
+}
+
+.updateDate {
+  flex: 4.4;
+}
+
+.updateTitle {
+  flex: 7;
+  overflow: hidden;
+  text-overflow: "...";
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+  height: 30px;
+}
+
+/* side container */
+.solider {
+  min-width: 22%;
+}
+
+.solider h3 {
+  padding: 0;
+}
+
+.solider a {
+  color: #E76489;
+}
+
+/* media query for all screens to select the right width */
+@media ( max-width: 768px ) {
+  .newsContainer li {
+    display: block;
+    position: relative;
+  }
+
+  .newsLink {
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+  }
+}
+
+/* #text the first content for debiancn-home page */
+
+.moreMsg {
+  float: right;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.linkLists li {
+  line-height: 30px;
+}
+
+#contact ol > li {
+  list-style-position: inside;
+}
